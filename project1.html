@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 70%;
+            margin: auto;
+            border: 2px solid black;
+        }
+        #header{
+            display: flex;
+            justify-content: space-between;
+            background-color: green;
+            height: 40px;
+            position: fixed;
+            width: 69.6%;
+            padding-top: 12px;
+            
+           
+           
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            gap:5px;
+            cursor: pointer;
+            
+
+        }
+        #head{
+            text-align: center;
+            padding-top: 45px;
+        }
+        .item{
+            position: relative;
+            right: 50px;
+
+        }
+        .mainbox{
+            display: flex;
+            justify-content: space-between;
+            height: 40vh;
+            width: 100%;
+           
+        }
+        .main1{
+            border: 2px solid purple;
+            height: 30vh;
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px;
+            
+            
+        }
+        .main11{
+            border: 2px solid red;
+            height: 30vh;
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px;
+            position: sticky;
+            
+        }
+        
+        .box1{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            
+            
+        }
+        .box2{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box3{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+
+            
+        }.box4{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box5{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box6{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            position: relative;
+            right: 60px;
+            bottom: 50px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box7{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+           
+        }
+        .box8{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box9{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            position: relative;
+            left: 60px;
+            bottom: 50px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .heading{
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+        .box11{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+            
+        }
+        .box12{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box13{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }.box14{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box15{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            position: relative;
+            top: 20px;
+            left: 25px;
+            border: 2px solid purple;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+        .box16{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box17{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box18{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            
+        }
+        .box19{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            position: relative;
+            right: 55px;
+            bottom: 50px;
+            border: 2px solid purple;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(31, 5, 31);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box20{
+            height: 50px;
+            width: 57px;
+            border: 2px solid purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box22{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        .box23{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        .box24{
+            height: 50px;
+            width: 57px;
+            border: 2px  solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            position: relative;
+            
+        }
+        .main3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: cornflowerblue;
+            
+        }
+        .main2{
+            border: 2px solid purple;
+            width: 20vw;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: scroll;
+            left:35%;
+            margin-top: 2px;
+            margin-bottom: 30px;
+            
+            
+        }
+        .fixed{
+            position: sticky;
+            left: 70px;
+            top: 30px;
+            height: 45px; 
+            width: 70px;
+            border: 2px  solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            top:90px;
+            padding:20px;
+            
+        }
+        
+        .main4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box25{
+            height: 20px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            border-top: none;
+        }
+        .box26{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        .main6{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 7px;
+            
+        }
+        .box{
+            height: 50px;
+            width: 57px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            background-color: rgb(15, 64, 15);
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        .main7{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 3px;
+        }
+        .main8{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .color{
+            border: red;
+        }
+        .box40{
+            width: 43%;
+        }
+        .main9{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+        .main10{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .box48{
+            margin-left: 14%;
+        }
+        .box49{
+            margin-right: 14%;
+        }
+        img{
+            height: 20%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .head1{
+            background-color: cornflowerblue;
+        }
+        .bigdiv{
+            background-color: cornflowerblue;
+        }
+        .border{
+            border: 1px solid red;
+            width: 71%;
+            margin: 12px;
+            margin-left: 14%;
+            
+        }
+        .footer{
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+            flex-direction: row;
+            height: 40px;
+        }
+        i:hover{
+           color: black;
+        }
+        button:hover{
+            background-color: aquamarine;
+            
+        }
+        .nav:hover{
+            color: aqua;
+            
+        }
+        .logo{
+            height: 30px;
+            width: 40px;
+            background-color: red;
+            float: right;
+            position: sticky;
+            border-radius: 30px 0px 0px 30px ;
+        }
+        .box60{
+            margin-bottom: 20px;
+        }
+        .nav1{
+            color: brown;
+        }
+        .nav1:hover{
+            color: aquamarine;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/90d9f89ac1.js" crossorigin="anonymous"></script>
+    <div>
+        <div id="header">
+            <div>FLOAT, POSITION & FLEX</div>
+            <div class="main">
+                <div class="nav1">Home</div>
+                <div class="nav">Adout</div>
+                <div class="nav">servies</div>
+            </div>
+            <div>
+                <button id="navbar">Signup</button>
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="head1">
+            <div id="head">
+                <h3>POSITINING ELEMENTS USING FLOATS</h3>
+            </div>
+            <div class="mainbox">
+                <div class="main11">
+                    <div class="box1">Section1</div>
+                    <div class="box2">Section2</div>
+                    <div class="box3">Section1</div>
+                </div>
+                <div class="main11">
+                    <div class="box4">Section1</div>
+                    <div class="box5">Section1</div>
+                    <div class="box6">Section2</div>
+                </div>
+                <div class="main11">
+                    <div class="box7">Section1</div>
+                    <div class="box8">Section1</div>
+                    <div class="box9">Section2</div>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <h2>UNIQUELY POSITIONING CONTENT</h2>
+        </div>
+        <div>
+            <div class="mainbox">
+                <div class="main1">
+                    <div class="box11">Section1</div>
+                    <div class="box12">Section2</div>
+                    <div class="box13">Section1</div>
+                </div>
+                <div class="main1">
+                    <div class="box14">Section1</div>
+                    <div class="box15">Section2</div>
+                    <div class="box16">Section1</div>
+                </div>
+                <div class="main1">
+                    <div class="box17">Section1</div>
+                    <div class="box18">Section1</div>
+                    <div class="box19">Section2</div>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="fixed">section2</div>
+            <p>Lorem ipsum dolor sit amet, consectetu adipisicing elit. Modi expedita ducimus
+                 quaerat deserunt numquam! Ab fugiat inventore eligendi necessitatibus. Voluptates, earum. 
+                 Asperiores, quam Facere exercitationem doloribus voluptatem, reiciendis officiis repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt aut ut facilis labore quas dolore vitae, voluptate doloribus distinctio rem illo nulla quod veritatis voluptas accusamus fugit sapiente dolor quidem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ullam provident voluptas dicta, ut sequi eveniet sint perspiciatis, harum, cumque eligendi! Minus ut quo libero aliquid labore distinctio illum temporibus consequuntur quos eaque, adipisci quis eligendi quam? Totam, nobis quisquam repellat ipsam provident repellendus. Sapiente et, iure autem praesentium distinctio provident expedita molestiae assumenda. Repudiandae molestias dolorum, minima quod ipsum sint consequatur obcaecati, adipisci officiis possimus nisi quisquam repellat sequi soluta impedit ratione voluptate sed laudantium exercitationem. Corporis eaque in delectus, autem, assumenda temporibus ut possimus blanditiis laborum quidem, veritatis dolore. Optio soluta dicta ducimus. Delectus atque iste dicta consequatur nesciunt unde, ipsam obcaecati tempora, corrupti quasi velit
+                 fugit vero veniam blanditiis vel cumque perspiciatis tenetur voluptates sint nam voluptatum deserunt eaque molestias. Aut nam veniam sint unde culpa cum, eligendi nostrum dolore fugiat et non asperiores sed, veritatis voluptatibus mollitia. Iusto ratione aliquid eaque voluptate ipsum nulla nemo vero fuga reiciendis a harum, suscipit facere ad consequatur. Praesentium, quidem ut corrupti explicabo corporis error iusto repudiandae, nulla minima suscipit, nesciunt hic excepturi. Placeat nesciunt quas aliquam vel omnis voluptatum, tempora cumque illum optio labore. Deserunt repellat illo accusamus, molestias consequatur eius explicabo repellendus earum hic, quod non harum architecto?</p>
+        </div>
+        <div>
+            <div class="main3">
+                <h4>POSITIONING WITH FLFX</h4>
+                <div class="box22">Section1</div>
+                <div class="box23">Section2</div>
+                <div class="box24">Section3</div>
+            </div>
+        </div>
+        <div class="bigdiv">
+            <div class="main4">
+                <div class="box26">item4</div>
+            </div>
+            <div class="border"></div>
+            <div class="main6">
+                <div class="box box27">item1</div>
+                <div class="box box28">item2</div>
+                <div class="box box29">item3</div>
+                <div class="box box30">item4</div>
+                <div class="box box31">item5</div>
+                <div class="box box32">item6</div>
+                <div class="box box33">item7</div>
+                <div class="box box34">item8</div>
+                <div class="box box35">item9</div>
+                <div class="box box36">item10</div>
+            </div>
+            <div class="main7">
+                <div class="box box37">item11</div>
+                <div class="box box38">item12</div>
+                <div class="box box39">item13</div>
+                <div class="box box41">item14</div>
+                <div class="box box42">item15</div>
+                <div class="box box43">item16</div>
+                <div class="box box44">item17</div>
+                <div class="box box45">item18</div>
+                <div class="box box46">item19</div>
+                <div class="box box47">item20</div>
+            </div>
+            <div class="border"></div>
+            <div class="main8">
+                <div class="box box48">item21</div>
+                <div class="box box49">item22</div>
+            </div>
+            <div class="color"></div>
+            <div class="main7">
+                <div class="box box50">item1</div>
+                <div class="box box51">item2</div>
+                <div class="box box40">item3</div>
+                <div class="box box53">item4</div>
+                <div class="box box54">item5</div>
+            </div>
+            <div class="border"></div>
+            <div class="main9">
+                <div class="box box55">item1</div>
+                <div class="box box56">item2</div>
+                <div class="box box57">item3</div>
+                <div class="box box58">item4</div>
+                <div class="box box59">item5</div>
+            </div>
+            <div class="logo"><a href="#"><i class="fa-solid fa-arrow-up" magin-left="5px"></i></a></div>
+            <div class="main10">
+                <div class="box box60">item6</div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PreetiDiwakarGitHub/project3.git
+git push -u origin main -->
